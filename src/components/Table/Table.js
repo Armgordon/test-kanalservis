@@ -30,7 +30,7 @@ const Table = () => {
     const [noteState, setNoteState] = useState('')
 
     //Отображение полей фильтрации
-    const [filterShowStatus, setFilterShowState] = useState(false)
+    const [filterShowStatus, setFilterShowStatus] = useState(false)
 
     //Статус отфильтрованного содержимого
     const [isFiltered, setFiltered] = useState(false)
@@ -60,11 +60,18 @@ const Table = () => {
 
 
     function changeFiltersShowHandler (){
-        setFilterShowState(prev => !prev)
+        filterShowStatus && resetFilteredState()
+        setFilterShowStatus(prev => !prev)
     }
 
     function resetFilteredState(){
         setFiltered(false)
+        setFilterState(prev => {
+            return{
+                ...prev,
+                value: ''
+            }
+        })
     }
 
     function filterNoteHandler(note){
