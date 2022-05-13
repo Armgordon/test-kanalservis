@@ -1,0 +1,8 @@
+.Row{
+  height: 40px;
+
+  &:nth-child(2n){
+    background-color: #aaa;
+  }
+
+}

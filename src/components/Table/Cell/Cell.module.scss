@@ -1,0 +1,42 @@
+.Cell{
+  position: relative;
+  padding: 5px 10px;
+
+
+  &:nth-child(1),
+  &:nth-child(2) {
+    text-align: left;
+  }
+
+  &:nth-child(2){
+    min-width: 300px;
+  }
+
+  &:nth-child(3),
+  &:nth-child(4){
+    text-align: right;
+  }
+
+  &_thead{
+    user-select: none;
+    background: blueviolet;
+    text-align: center;
+
+
+    &_sotrtable{
+      cursor: pointer;
+      &:hover{
+        background: #432b7c;
+      }
+    }
+  }
+
+  &_opener{
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 1px #432b7c;
+    user-select: none;
+  }
+
+}

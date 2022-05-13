@@ -1,0 +1,28 @@
+.PageNav{
+  border-top: 1px solid black;
+
+
+  &__ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+
+  }
+
+  &__li{
+    cursor: pointer;
+    list-style: none;
+
+    &:hover{
+      font-weight: bold;
+    }
+
+  }
+
+  &__link{
+
+  }
+
+}
