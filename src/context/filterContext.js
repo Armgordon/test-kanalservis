@@ -1,5 +1,3 @@
-import React from "react";
+import React from 'react';
 
-
-
-export const FilterContext = React.createContext(false)
+export const FilterContext = React.createContext(false);

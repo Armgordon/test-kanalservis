@@ -1,12 +1,8 @@
 import React from 'react';
-import classes from './section.module.scss'
+import classes from './section.module.scss';
 
-const Section = (props) => {
-    return (
-            <div className={classes.section}>
-                {props.children}
-            </div>
-    );
-};
+function Section({ children }) {
+  return <div className={classes.section}>{children}</div>;
+}
 
 export default Section;

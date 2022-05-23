@@ -1,0 +1,27 @@
+.AssignmentList{
+  position: absolute;
+  top: 0;
+
+  padding: 20px 40px;
+  width: 100%;
+
+  background: #cccccc;
+
+  max-height: 80px;
+  overflow: hidden;
+
+  //border-radius: 40px;
+  z-index: 5;
+
+  border-bottom:3px solid #1b8694;
+
+  &_shown{
+    max-height: 300px;
+    overflow: auto;
+
+  }
+
+  h2{
+    margin: 0;
+  }
+}

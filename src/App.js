@@ -1,13 +1,16 @@
-import classes from './App.module.scss'
-import Table from "./components/Table/Table";
-import Section from "./containers/section";
+import React from 'react';
+import classes from './App.module.scss';
+import Table from './components/Table/Table';
+import Section from './containers/section';
+import AssignmentList from './components/AssignmentList/AssignmentList';
 
 function App() {
   return (
     <div className={classes.App}>
-        <Section>
-            <Table/>
-        </Section>
+      <AssignmentList />
+      <Section>
+        <Table />
+      </Section>
     </div>
   );
 }
